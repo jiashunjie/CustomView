@@ -10,11 +10,13 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@color/colorPrimary" />
+        android:scaleType="centerCrop"
+        android:src="@mipmap/timg" />
 
     <com.example.customviewdemo.widget.CountDownView
         android:layout_width="50dp"
         android:id="@+id/cdv"
+        android:layout_marginTop="20dp"
         android:layout_height="50dp"
         app:ringColor="@color/colorPrimaryDark"
         android:layout_alignParentRight="true" />

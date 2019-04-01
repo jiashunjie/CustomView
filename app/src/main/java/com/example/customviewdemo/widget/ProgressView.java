@@ -8,9 +8,11 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 public class ProgressView extends View {
+    private static final String TAG = "ProgressView";
     //分段颜色
     private static final int[] SECTION_COLORS = {Color.GREEN, Color.YELLOW, Color.RED};
     private static final String[] ALARM_LEVEL = {"安全", "低危", "中危", "高危"};
@@ -78,6 +80,7 @@ public class ProgressView extends View {
                     Shader.TileMode.MIRROR);
             mPaint.setShader(shader);
         }
+        Log.e(TAG, "onDraw: section="+section );
         canvas.drawArc(rectBlackBg, 180, section * 360, false, mPaint);
     }
 

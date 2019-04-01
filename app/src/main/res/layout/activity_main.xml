@@ -23,6 +23,7 @@
         android:layout_centerInParent="true" />
 
     <com.example.customviewdemo.widget.ProgressView
+        android:id="@+id/pv"
         android:layout_width="100dp"
         android:layout_centerInParent="true"
         android:layout_height="100dp" />
